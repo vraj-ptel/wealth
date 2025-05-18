@@ -5,17 +5,17 @@ import { defaultCategories } from "@/data/category";
 import React from "react";
 
 
-const page = async ({ searchParams}: {searchParams:any}) => {
+const page = async () => {
   const account = await getAccounts();
-  
+  // { searchParams}: {searchParams:any}
   // console.log("edit",searchParams)
-  const editId=searchParams?.edit;
-  let initialData={};
-  console.log("editid",editId);
-  if(editId){
-    const transactions=await getTransaction(editId as string);
-    initialData=transactions
-  }
+  // const editId=searchParams?.edit;
+  // let initialData={};
+  // console.log("editid",editId);
+  // if(editId){
+  //   const transactions=await getTransaction(editId as string);
+  //   initialData=transactions
+  // }
   
 
   return (
@@ -23,7 +23,7 @@ const page = async ({ searchParams}: {searchParams:any}) => {
       <h1 className="text-center text-3xl font-bold bg-gradient-to-br from-indigo-400 to-purple-400 bg-clip-text text-transparent ">
         Add Transaction
       </h1>
-      <AddTransaction account={account?.accounts } editMode={!!editId} initialData={initialData} categories={defaultCategories}/>
+      <AddTransaction account={account?.accounts }  categories={defaultCategories}/>
     </div>
   );
 };

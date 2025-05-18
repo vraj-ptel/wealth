@@ -41,13 +41,11 @@ type aiReadedData = {
 const AddTransaction = ({
   account,
   categories,
-  editMode = false,
-  initialData = null,
+ 
 }: {
   account: any;
   categories: any;
-  initialData: any;
-  editMode?: any;
+  
 }) => {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -110,7 +108,7 @@ const AddTransaction = ({
       const accountId = data?.accountId;
       router.push(`/account/${accountId}`);
     }
-  }, [data, loading,editMode]);
+  }, [data, loading]);
 
   useEffect(() => {
     if (error) {
