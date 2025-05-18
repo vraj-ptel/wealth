@@ -36,7 +36,7 @@ function getRandomAmount(min:any, max:any) {
 }
 
 // Helper to get random category with amount
-function getRandomCategory(type:any) {
+function getRandomCategory(type: "INCOME" | "EXPENSE") {
   const categories = CATEGORIES[type];
   const category = categories[Math.floor(Math.random() * categories.length)];
   const amount = getRandomAmount(category.range[0], category.range[1]);
