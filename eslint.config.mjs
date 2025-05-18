@@ -23,6 +23,8 @@ const eslintConfig = [
       "@typescript-eslint/no-unnecessary-type-constraint": "off",
       "@typescript-eslint/no-wrapper-object-types":"off",
       "@typescript-eslint/no-unnecessary-type-constraint":"off",
+      "@typescript-eslint/no-unsafe-function-types":"off",
+      "@typescript-eslint/no-non-null-asserted-optional-chain":"off",
 
       "react/no-unstable-nested-components": "off",
       "react/no-unknown-property": "off",
