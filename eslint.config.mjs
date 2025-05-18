@@ -26,6 +26,7 @@ const eslintConfig = [
       "@typescript-eslint/no-unsafe-function-types":"off",
       "@typescript-eslint/no-non-null-asserted-optional-chain":"off",
       "@typescript-eslint/no-unsafe-function-types":"off",
+      "@typescript-eslint/no-unsafe-function-type": "off",
 
       "react/no-unstable-nested-components": "off",
       "react/no-unknown-property": "off",
