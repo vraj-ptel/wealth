@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { getAccounts, getDashboardData } from "@/actions/accountActions";
 import { getCurrentBudget } from "@/actions/budget";
 import CreateAccountDrawer from "@/components/shared/CreateAccountDrawer";

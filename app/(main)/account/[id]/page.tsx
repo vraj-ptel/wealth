@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { getAccountDataById } from "@/actions/accountActions";
 import AccountChart from "@/components/specific/AccountChart";
 import Transactiontabe from "@/components/specific/Transactiontabe";
