@@ -1,9 +1,11 @@
+
+export const dynamic = "force-dynamic";
+
 import { getAccounts } from "@/actions/accountActions";
 import { getTransaction } from "@/actions/transaction";
 import AddTransaction from "@/components/specific/AddTransaction";
 import { defaultCategories } from "@/data/category";
 import React from "react";
-
 
 const page = async () => {
   const account = await getAccounts();
@@ -16,7 +18,6 @@ const page = async () => {
   //   const transactions=await getTransaction(editId as string);
   //   initialData=transactions
   // }
-  
 
   return (
     <div className="mt-15 max-w-3xl mx-auto px-4 rounded-lg shadow-lg ">
