@@ -4,10 +4,8 @@ import AddTransaction from "@/components/specific/AddTransaction";
 import { defaultCategories } from "@/data/category";
 import React from "react";
 
-interface PageProps {
-  searchParams?: { [key: string]: string | string[] | undefined };
-}
-const page = async ({ searchParams}: PageProps) => {
+
+const page = async ({ searchParams}: {searchParams:any}) => {
   const account = await getAccounts();
   
   // console.log("edit",searchParams)
