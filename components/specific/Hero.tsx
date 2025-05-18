@@ -1,9 +1,9 @@
 "use client";
-import Link from "next/link";
-import React, { useEffect, useRef } from "react";
-import { Button } from "../ui/button";
-import banner from '@/public/banner.jpeg'
+import banner from '@/public/banner.jpeg';
 import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useRef } from "react";
+import { Button } from "../ui/button";
 
 const Hero = () => {
     const imagRef=useRef(null)

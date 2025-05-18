@@ -1,16 +1,15 @@
 "use client"
-import React, { useEffect, useState } from 'react'
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-  } from "@/components/ui/card"
-import { Switch } from '../ui/switch'
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle
+} from "@/components/ui/card"
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { Switch } from '../ui/switch'
 
 import { updateDefaultAccout } from '@/actions/accountActions'
 import useFetch from '@/hooks/useFetch'

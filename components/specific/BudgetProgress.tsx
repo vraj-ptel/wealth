@@ -1,19 +1,18 @@
 "use client";
-import React, { useEffect } from "react";
+import { updateBudge } from "@/actions/budget";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
-  CardTitle,
+  CardTitle
 } from "@/components/ui/card";
+import useFetch from "@/hooks/useFetch";
+import { Check, Pencil, X } from "lucide-react";
+import React, { useEffect } from "react";
+import { toast } from "sonner";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
-import { Check, Pencil, X } from "lucide-react";
-import useFetch from "@/hooks/useFetch";
-import { updateBudge } from "@/actions/budget";
-import { toast } from "sonner";
 import { Progress } from "../ui/progress";
 
 const BudgetProgress = ({

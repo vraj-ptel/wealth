@@ -3,8 +3,8 @@ import { scanRecipt } from "@/actions/transaction";
 import useFetch from "@/hooks/useFetch";
 import { CameraIcon } from "lucide-react";
 import React, { useEffect, useRef } from "react";
-import { Button } from "../ui/button";
 import { toast } from "sonner";
+import { Button } from "../ui/button";
 
 const Receiptscanner = ({ onScanComplete }: { onScanComplete: any }) => {
   const fileRef = useRef<null | HTMLInputElement>(null);
