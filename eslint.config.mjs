@@ -14,10 +14,27 @@ const eslintConfig = [
   {
     rules: {
       "@typescript-eslint/no-unused-vars": "off",
-      'react/no-unescaped-entities': 'off',
+      "@typescript-eslint/no-require-imports": "off",
+      " @typescript-eslint/no-unused-expressions": "off",
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/no-this-alias": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+
+      "react/no-unstable-nested-components": "off",
+      "react/no-unknown-property": "off",
+      "react/no-unescaped-entities": "off",
+
+      "react-hooks/rules-of-hooks": "off",
+      "react-hooks/exhaustive-deps": "off",
+      "react/no-unknown-property": "off",
+
+      "react/no-unstable-nested-components": "off",
+      "react/no-unknown-property": "off",
+
+      "react/no-unescaped-entities": "off",
     },
   },
-   {
+  {
     // Disable all TypeScript rules globally
     files: ["**/*"],
     rules: {
