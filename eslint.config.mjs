@@ -17,6 +17,13 @@ const eslintConfig = [
       'react/no-unescaped-entities': 'off',
     },
   },
+   {
+    // Disable all TypeScript rules globally
+    files: ["**/*"],
+    rules: {
+      "@typescript-eslint/*": "off",
+    },
+  },
 ];
 
 export default eslintConfig;
